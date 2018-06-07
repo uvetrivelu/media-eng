@@ -1,0 +1,114 @@
+1. Get Product List View
+
+GET
+
+/index.html
+
+/products/category/<category>
+
+2. Get Product Detail
+GET
+/product/detail/id/<id>
+
+3. Add to Cart
+
+POST
+
+/purchase/cart/
+
+Request JSON
+
+{
+    "userid" : "",
+
+    "sessionid" : "",
+
+    "products" : [
+        {
+            "productid" : "",
+        }
+    ]
+
+}
+
+Response JSON
+
+{
+    "userid" : "",
+
+    "sessionid" : "",
+
+    "products" : [
+
+        {
+            "productid" : "",
+
+            "quantity" : 5,
+
+            "price" : "",
+
+            "tax" : ""
+
+        }
+
+    ],
+
+    "currentOrderTotal" : "",
+
+    "OrderId" : "",
+
+    "OrderStatus" : "CARTED"
+
+}
+
+4. Purchase Order
+
+POST:
+
+/purchase/order/
+
+Request JSON:
+{
+    "userid" : "",
+
+    "sessionid" : "",
+
+    "products" : [
+        {
+            "productid" : "",
+        }
+    ]
+
+}
+
+Response JSON
+
+{
+    "userid" : "",
+
+    "sessionid" : "",
+
+    "products" : [
+
+        {
+            "productid" : "",
+
+            "quantity" : 5,
+
+            "price" : "",
+
+            "tax" : "",
+
+            "shipping" : ""
+
+        }
+
+    ],
+
+    "currentOrderTotal" : "",
+
+    "OrderId" : "",
+
+    "OrderStatus" : "COMPLETED"
+
+}
