@@ -1,19 +1,67 @@
 1. Get Product List View
 
-GET
-
-/index.html
+GET all products for given category:
 
 /products/category/<category>
 
+Response:
+ {
+ "products" : [
+
+         {
+             "productid" : "",
+
+             "name" : "",
+
+             "category" : "",
+
+             "price" : "",
+
+             "thumbnail_url" : ""
+
+         }
+
+     ]
+ }
+
 2. Get Product Detail
+
 GET
 /product/detail/id/<id>
+Response:
+    {
+         "productid" : "",
+
+         "name" : "",
+
+         "category" : "",
+
+         "manufacturer" : "",
+
+         "dimensions" : "",
+
+         "price" : "",
+
+         "description" : "",
+
+         "images" : [
+            {
+                "url" : ""
+            }
+         ],
+
+         "ratings" : [
+            {
+                "reviewer" : "",
+                "content" : "",
+                "image"
+            }
+         ]
+    }
 
 3. Add to Cart
 
 POST
-
 /purchase/cart/
 
 Request JSON
@@ -26,6 +74,8 @@ Request JSON
     "products" : [
         {
             "productid" : "",
+
+            "quantity" : <>
         }
     ]
 
@@ -43,8 +93,6 @@ Response JSON
         {
             "productid" : "",
 
-            "quantity" : 5,
-
             "price" : "",
 
             "tax" : ""
@@ -53,7 +101,7 @@ Response JSON
 
     ],
 
-    "currentOrderTotal" : "",
+    "OrderTotal" : "",
 
     "OrderId" : "",
 
@@ -112,3 +160,26 @@ Response JSON
     "OrderStatus" : "COMPLETED"
 
 }
+
+5. Filter
+
+GET products filtered by price less than equal to 10
+/product?searchBy=price&filter=10
+ {
+ "products" : [
+
+         {
+             "productid" : "",
+
+             "name" : "",
+
+             "category" : "",
+
+             "price" : "",
+
+             "thumbnail_url" : ""
+
+         }
+
+     ]
+ }

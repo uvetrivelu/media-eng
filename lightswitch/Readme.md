@@ -1,4 +1,4 @@
-In this context, I have modeled Light as an object that "has a" Switch. So the association is 1:1 for this case. Although in real world one switch can operate many lights, I left that out for simplicity.
+I have modeled Light as an object that "has a" Switch. So the association is 1:1 for this case. Although in real world one switch can operate many lights, I left that aspect out for simplicity.
 
 ###Build 
 
