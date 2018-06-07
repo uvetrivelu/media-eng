@@ -22,5 +22,5 @@
 ###Deliverables
     
     - The "buy5" folder contains System Architecture, Tech Stack Architecture, Internal Architecture Component Diagram & Order Purchase Sequence Diagram.
-    - All artifacts are names in self explanatory way.
+    - All diagram artifacts are in PDF format named in self explanatory way. (The XML files are artifacts for importing through draw.io)
     - In the architecture I have omitted components like PaymentService, InventoryService, AccountService, EmailService etc to keep the scope limited and to address the problem within given timelines.
