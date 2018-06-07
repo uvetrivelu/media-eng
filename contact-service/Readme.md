@@ -1,7 +1,5 @@
 To be able to ship this project, I have packaged it using maven pom.xml with compile & jar plugins. Please see instructions below to run the project:
 
-###
-Once the file is unzipped, cd into `media-eng` folder which will be your working directory for this project.
 ###Build 
 
 To compile & build classes run: `mvn clean compile`
